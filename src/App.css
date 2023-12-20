@@ -1,38 +1,222 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-position: top center; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 110vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-nav {
+  background-color: black;
+  opacity: 0.7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-bar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  list-style-type: none;
+  height: 100px;
+  font-size: 1.4em;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.nav-bar li a {
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-bar li a:hover {
+  transition-property: color;
+  transition-duration: 0.8s;
+  color: yellow; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.controllers-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  max-height: 20vh;
+  margin-top: 10px;
+}
+
+.controllers-nav h2 {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  color:rgb(196, 112, 4)
+}
+
+.controller-subheader {
+  list-style-type: none;
+}
+
+.controller-subheader li {
+  border-bottom: 1px solid silver;
+  cursor: pointer;
+}
+
+.controller-subheader img {
+  max-width: 120px;
+  height: 70px;
+  object-fit: cover;
+}
+
+.controller-subheader img:hover {
+  transform: scale(2);
+  transition-property: transform; 
+  transition-duration: 1.5s;
+}
+
+.main-menu {
+  background-color:rgb(5, 5, 48); 
+  color: white;
+}
+
+.sub-main-menu {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.sub-div1 {
+  text-align: center;
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sub-div2 img {
+  width: 370px;
+}
+
+.coming-games {
+  padding: 7px 9px 7px 9px;
+}
+
+.coming-games h1 {
+  text-align: center; 
+  text-transform: uppercase;
+}
+
+.newGames-coming {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-around;
+  padding: 7px;
+  text-align: center;
+  border-right: 8px solid rgb(5, 5, 48);
+  border-left: 8px solid rgb(5, 5, 48);
+  border-radius: 30px;
+} 
+
+.newGames-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  padding: 10px;
+  height: 100vh;
+}
+
+.platform-list {
+  flex-grow: 1;
+}
+
+.platform-list li {
+  display: flex;
+  flex-direction: column;
+  font-family: georgia;
+}
+
+.newGames-list li h2 {
+  height: 70px;
+  width: 320px;
+}
+
+.newGames-list img {
+  width: 250px; 
+  height: 300px; 
+  border-radius: 25px;
+}
+
+.coming-games button {
+  display: block;
+  width: 250px;
+  background-color: rgb(5, 5, 48);
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.2em;
+  padding: 7px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 15px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.coming-games button:hover {
+  transform: scale(1.1); 
+}
+
+.subscribe-div {
+  background-color: rgb(16, 16, 53);
+  margin-top: 10px;
+  color: white;
+  padding: 7px 10px 7px 10px; 
+  text-align: center;
+  height: 30vh;
+}
+
+.subscribe-div h3 {
+  border-bottom: 2px solid silver;
+  width: 720px;
+  padding: 6px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+}
+
+.subscribe-div button {
+  width: 150px; 
+  background-color: rgb(126, 6, 6);
+  padding: 7px;
+  border: none; 
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.footer-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 10px 8px 10px 8px;
+  background-color: rgb(19, 16, 16); 
+  color: white; 
+}
+
+.footer-container h3 {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  color:rgb(196, 112, 4);
+}
+
+.footer-icons {
+  list-style-type: none; 
+  display: flex;
+  align-self: flex-end;
+  gap: 10px;
 }
